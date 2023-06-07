@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>WalkOrdinary</title>
+        <title>YandexTemplate</title>
         <style>
             html, body {
                 width: 100%;
@@ -148,17 +148,17 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/Nubick.loader.js'
+                    unityLoader.src = 'Build/AlienShooter.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/Nubick.data.unityweb',
-                                frameworkUrl: 'Build/Nubick.framework.js.unityweb',
-                                codeUrl: 'Build/Nubick.wasm.unityweb',
+                                dataUrl: 'Build/AlienShooter.data.unityweb',
+                                frameworkUrl: 'Build/AlienShooter.framework.js.unityweb',
+                                codeUrl: 'Build/AlienShooter.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
-                                productName: 'WalkOrdinary',
+                                productName: 'YandexTemplate',
                                 productVersion: '0.1',
                                 // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                                 // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
