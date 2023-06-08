@@ -148,14 +148,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/AlienShoter.loader.js'
+                    unityLoader.src = 'Build/AlienShooter.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/AlienShoter.data.unityweb',
-                                frameworkUrl: 'Build/AlienShoter.framework.js.unityweb',
-                                codeUrl: 'Build/AlienShoter.wasm.unityweb',
+                                dataUrl: 'Build/AlienShooter.data.unityweb',
+                                frameworkUrl: 'Build/AlienShooter.framework.js.unityweb',
+                                codeUrl: 'Build/AlienShooter.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'YandexTemplate',
